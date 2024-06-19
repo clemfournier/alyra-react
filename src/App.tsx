@@ -1,12 +1,17 @@
 import './App.css';
 import { WalletMultiButton } from '@solana/wallet-adapter-react-ui';
+import { Dashboard } from './pages/Dashboard';
 
-function App() {  
+function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
+      <div className="header">
+        <div className='wallet'>
           <WalletMultiButton></WalletMultiButton>
-      </header>
+        </div>
+      </div>
+      <Dashboard />
     </div>
   );
 }
