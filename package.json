@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@coral-xyz/anchor": "^0.30.0",
+    "@coral-xyz/anchor": "0.29.0",
     "@solana/wallet-adapter-react": "0.15.35",
     "@solana/wallet-adapter-react-ui": "0.9.35",
     "@solana/wallet-adapter-wallets": "0.19.32",
@@ -11,6 +11,7 @@
     "@types/node": "^20.14.2",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
+    "bn.js": "^5.2.1",
     "browserify-zlib": "^0.2.0",
     "crypto": "^1.0.1",
     "crypto-browserify": "^3.12.0",
@@ -22,6 +23,7 @@
     "stream-browserify": "^3.0.0",
     "stream-http": "^3.2.0",
     "ts-loader": "^9.5.1",
+    "tweetnacl": "^1.0.3",
     "typescript": "4.8.4",
     "url": "^0.11.3",
     "vm-browserify": "^1.1.2"
@@ -54,6 +56,7 @@
     "@ledgerhq/errors": "6.16.3"
   },
   "devDependencies": {
-    "@babel/plugin-transform-private-property-in-object": "^7.24.7"
+    "@babel/plugin-transform-private-property-in-object": "^7.24.7",
+    "@types/bn.js": "^5.1.5"
   }
 }
