@@ -11,10 +11,8 @@ const root = ReactDOM.createRoot(
 
 const wallets = [new PhantomWalletAdapter()];
 
-
-
 root.render(
-  <ConnectionProvider endpoint={'https://api.devnet.solana.com'}>
+  <ConnectionProvider endpoint={process.env.REACT_APP_RPC_URL!}>
     <WalletProvider wallets={wallets} autoConnect>
       <WalletModalProvider>
         <App />

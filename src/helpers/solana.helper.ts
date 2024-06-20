@@ -1,10 +1,10 @@
 import { BN, Idl, Program } from "@coral-xyz/anchor";
 import { AnchorWallet, WalletContextState } from "@solana/wallet-adapter-react";
-import { Connection, LAMPORTS_PER_SOL, PublicKey, SystemProgram, Transaction, TransactionInstruction, clusterApiUrl } from "@solana/web3.js";
+import { Connection, LAMPORTS_PER_SOL, PublicKey, SystemProgram, Transaction, TransactionInstruction } from "@solana/web3.js";
 import { sign } from 'tweetnacl';
 import { IDL, PROGRAM_ID } from "../idl/idl";
 
-const connection = new Connection(clusterApiUrl("devnet"), "confirmed");
+const connection = new Connection(process.env.REACT_APP_RPC_URL!, "confirmed");
 const program = new Program<Idl>(IDL as Idl, PROGRAM_ID, {
     connection,
 });
